@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+
+    <title>Sistema Integral de Información de Investigaciones CGEPI</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <link href="signin.css" rel="stylesheet">
+    
+    <link href="css/res_forr.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="menu_formularios.html">Inicio</a></li>
+            <li role="presentation"><a href="registro_pro.html">Registro de Proyecto y Evidencias de Investigacion</a></li>
+            <li role="presentation"><a href="#"> Datos almacenadados</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted"> CGEPI</h3>
+      </div>
+     
+       <!--formularios-->
+       <div class="container">
+       
+        <form class="form-signin">
+          <h2 class="form-signin-heading">Registro de Proyecto y Evidencias de Investigación</h2>
+          <br/>
+          <!--nota de registro-->
+          <div clas="nota">
+                <p class="notare"> 
+                    NOTA: A los investigadores que se les solictó evidencia de los proyectos registrados y no cumplieron en tiempo y forma, este registro no será tomado en cuenta.
+                    Favor de no compartir el enlace de este formulario.
+                    <br/> <br/>
+                    
+                    EL REGISTRO DE LOS PROYECTOS ANTE LA DIRECCIÓN DE INVESTIGACIÓN Y POSGRADO, IMPLICA EL COMPROMISO DE ENTREGAR EVIDENCIA DE LOS PRODUCTOS DE LA INVESTIGACIÓN.
+                    <br/> <br/>
+                    
+                    Como lider de proyecto, favor de llenar el formulario con los requisitos descriptivos de la investigación iniciada en el 2019 (no registrar proyectos anteriores a este año).
+                </p>
+            </div>
+            <!--fin de nota de registro-->
+             <br/>
+            <!--nota de registro-->
+            <p class="nota2">Hola,al enviar este formulario, el propietario podrá ver su nombre y dirección de correo electrónico</p>
+
+            <!--primera pregunta-->
+            
+            <div class="radio" target="_blank">
+                <br/>
+                <br/>
+                <p class="pregunta">1. ¿Usted envió evidencia solicitada?</p> 
+                <p class="ind_preg"> Refiere al registro del año anterior </p>  
+                <label>
+                    <input type="radio" class ="radio"  name ="pre1" value="Si,sienvielaevidenciasolicitada"> Sí,si envié la evidencia solicitada
+                    <br/>
+                    <input type="radio" class ="radio"  name= "pre1" value="No,nolaenvie"> No, no la envié
+                    <br/>
+                    <input type="radio" class ="radio"  name="pre1" value="No,noregistreningunproyectoelañopasado"> No, no registré ningún proyecto el año pasado.
+                </label>    
+              </div>
+            
+            <!--final de primera pregunta-->
+
+            <br/>
+
+            <!--datos generales-->
+            <p class="apartados">Datos generales</p>
+            <br/>
+
+            <!--pregunta2 -->
+
+            <div>
+                <p class="pregunta">
+                   2. Expediente
+                </p>
+                <input type ="text" id="Expediente" class="form-control" placeholder="El valor debe de ser un número" required>
+            </div>
+
+            <!--final pregunta dos-->
+
+            <!--pregunta tres-->
+            <br/>
+            <div class="radio">
+                <p class="pregunta">
+                   3.Grado académico
+                </p>
+                <label >
+                    <input type="radio"  name="pre3" class ="radio" value="Doctorado"> Doctorado
+                    <br/>
+                    <input type="radio"  name="pre3" class ="radio" value="Maestria"> Maestría
+                    <br/>
+                    <input type="radio" name="pre3" class ="radio" value="Especialidadmedica"> Especialidad médica
+                 
+                </label>
+            </div>
+            <!--final pregunta tres-->
+            <br/>
+            <!--pregunta  cuatro-->
+
+            <div>
+                <p class="pregunta">
+                   4.Primer nombre
+                </p>
+                <p class="apartados">Escribir el primer nombre. Por ejemplo: "José" sin título,mayúsculas y minúsculas y acentos</p>
+                <input type ="text" id="Primernombre" class="form-control" placeholder="Escriba su respuesta" required>
+            </div>
+
+            <!--final pregunta cuatro-->
+            <br/>
+            <!--pregunta 5-->
+            <div>
+                <p class="pregunta">
+                   5.Segundo nombre
+                </p>
+                <p class="apartados">Escribir el segundo nombre. Por ejemplo: "Francisco" sin título,mayúsculas y minúsculas y acentos</p>
+                <input type ="text" id="Segundonombre" class="form-control" placeholder="Escriba su respuesta" required>
+            </div>
+            <!--final pregunta 5-->
+            <br/>
+
+          <!--pregunta6-->
+          <div>
+                <p class="pregunta">
+                    6.Apellido paterno
+                </p>
+                <p class="apartados">Escribir el apellido paterno. Por ejemplo: "López" mayúsculas y minúsculas y acentos</p>
+                <input type ="text" id="Apellidopaterno" class="form-control" placeholder="Escriba su respuesta" required>
+            </div>
+            <!--Final pregunta 6-->
+            <br/>
+            <!--pregunta7 -->
+            <div>
+                <p class="pregunta">
+                    7.Apellido materno
+                </p>
+                <p class="apartados">Escribir el apellido materno. Por ejemplo: "Pérez" mayúsculas y minúsculas y acentos</p>
+                <input type ="text" id="Apellidomaterno" class="form-control" placeholder="Escriba su respuesta" required>
+            </div>
+            <!--final pregunta 7-->
+            <br/>
+            <!--pregunta 8-->
+            <div class="radio">
+                <p class="pregunta">
+                   8.Sexo
+                </p>
+                <label >
+                    <input type="radio" name="pre8" class ="radio" value="Hombre"> Hombre
+                    <br/>
+                    <input type="radio" name="pre8" class ="radio" value="Mujer"> Mujer
+                    <br/>
+                 
+                </label>
+            </div>
+            <br/>
+
+          <button class="btn btn-lg btn-primary btn-block" type="submit" href="formulario_registro2.html">Siguiente</button>
+        </form>
+  
+      </div> <!-- /container -->
+        <!--footer-->
+      <footer class="footer">
+        <p class="footer">&copy; 2020</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vendor/holder.min.js"></script>
+
+    <script src="js/vendor/holder.min.js"></script>
+    
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
