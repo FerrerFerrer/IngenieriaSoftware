@@ -1,0 +1,31 @@
+:root{
+    --tipo--letra: verdana;
+    --color-letra:#fff;
+    --color-letra2:#000;
+
+
+}
+
+.letramenu{
+font-family: var(--tipo--letra);
+color:var(--color-letra);
+font-size: 18px;
+font-weight: normal;
+text-align: center;
+line-height: 50px;
+}
+
+
+.imagenn{
+    width: 300px;
+    height: auto;
+    margin: auto;
+    display: block;
+    padding: 10 px;
+}
+
+.divima{
+    width: 100%;
+    margin: 180px auto;
+   
+}
