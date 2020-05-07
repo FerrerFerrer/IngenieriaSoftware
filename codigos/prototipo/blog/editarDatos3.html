@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Sistema Integral de Información de Investigaciones CGEPI</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <link href="signin.css" rel="stylesheet">
+
+    <link href="css/res_forr.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="menu_formularios.html">Inicio</a></li>
+            <li role="presentation"><a href="registro_pro.html">Registro de Proyecto y Evidencias de Investigacion</a></li>
+            <li role="presentation"><a href="datos.html"> Datos almacenadados</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted"> CGEPI</h3>
+      </div>
+
+       <!--formularios-->
+       <div class="container">
+
+        <form class="form-signin">
+          <h2 class="form-signin-heading">Edición de Proyecto y Evidencias de Investigación</h2>
+          <br/>
+          <!--nota de registro-->
+          <div clas="nota">
+                <p class="apartados">
+                   Producción: <br/>
+                   Indique la cantidad de productos por tipo de producción (cero para ninguno)
+
+                </p>
+            </div>
+            <!--fin de nota de registro-->
+             <br/>
+
+
+            <!--pregunta 22-->
+
+            <div>
+                <p class="pregunta">
+                   22. Artículos
+                </p>
+                <input type ="text" value="Ejemplo" id="Articulos" class="form-control" placeholder="El valor debe de ser un número" required>
+            </div>
+
+            <!--final pregunta 22-->
+
+            <!--pregunta 23-->
+            <br/>
+            <div>
+                <p class="pregunta">
+                   23.Libro (s)
+                </p>
+                <input type ="text" value="Ejemplo" id="Libros" class="form-control" placeholder="El valor debe de ser un número" required>
+            </div>
+
+            <br/>
+            <!--final pregunta 23-->
+            <!--pregunta 24-->
+
+            <div>
+                <p class="pregunta">
+                   24.Capítulo de libro (s)
+                </p>
+                <input type ="text" value="Ejemplo" id="Capitulolibro" class="form-control" placeholder="El valor debe de ser un número" required>
+            </div>
+
+            <!--final pregunta 24 -->
+            <br/>
+            <!--pregunta 25-->
+            <div>
+                <p class="pregunta">
+                   25.Ponencia (s)
+                </p>
+                <input type ="text" value="Ejemplo" id="Ponencia" class="form-control" placeholder="El valor debe de ser un número" required>
+            </div>
+            <!--final pregunta 26-->
+            <br/>
+
+          <!--pregunta 26-->
+          <div>
+                <p class="pregunta">
+                    26.Patente (s)
+                </p>
+                <input type ="text" value="Ejemplo" id="Patentes" class="form-control" placeholder="El valor debe de ser un número" required>
+            </div>
+            <!--Final pregunta 26-->
+            <br/>
+            <!--pregunta27 -->
+            <div>
+                <p class="pregunta">
+                    27.Tesis
+                </p>
+                <input type ="text" value="0000001" id="Tesis" class="form-control" placeholder="El valor de ser un número" required>
+            </div>
+            <!--final pregunta 27-->
+            <br/>
+            <!--pregunta 28-->
+            <div class="radio">
+                <p class="pregunta">
+                   28.Tipo de metodología
+                </p>
+                <label >
+                    <input type="radio" name="pre28" class ="radio" value="Cualitativa" requerid> Cualitativa
+                    <br/>
+                    <input type="radio" name="pre28" class ="radio" value="Cuantitativa" requerid> Cuantitativa
+                    <br/>
+                    <input type="radio" checked="checked" name="pre28" class ="radio" value="Mixta" required> Mixta
+                    <br/>
+                </label>
+            </div>
+            <br/>
+            <!--Final pregunta 28-->
+
+            <!--pregunta 29-->
+
+            <div class="radio">
+                <p class="pregunta">
+                   29.Tipo de financiamiento
+                </p>
+                <p class="apartados">El financiamiento es oficial, mediante un convenio.</p>
+                <br/>
+                <label >
+                    <input type="radio" checked="checked" name="pre29" class ="radio" value="Sinfinanciamiento"> sin financiamiento
+                    <br/>
+                    <input type="radio" name="pre29" class ="radio" value="confinanciamiento"> con financiamiento de la DIP o un organismo externo
+                    <br/>
+
+                </label>
+            </div>
+            <br/>
+
+
+            <button class="btn btn-lg btn-primary btn-block" type="button" onclick="window.location.href='editarDatos2.html'">Atrás</button>
+            <button class="btn btn-lg btn-primary btn-block" type="button" onclick="window.location.href='editarDatos4.html'">Siguiente</button>
+        </form>
+
+      </div> <!-- /container -->
+        <!--footer-->
+      <footer class="footer">
+        <p class="footer">&copy; 2020</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vendor/holder.min.js"></script>
+
+    <script src="js/vendor/holder.min.js"></script>
+
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
