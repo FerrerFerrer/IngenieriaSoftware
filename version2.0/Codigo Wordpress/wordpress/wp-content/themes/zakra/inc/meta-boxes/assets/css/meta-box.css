@@ -1,0 +1,75 @@
+#zakra-page-setting .inside {
+	margin: 0;
+	padding: 0;
+}
+
+#zakra-page-setting #page-settings-tabs-wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+#zakra-page-setting .zakra-ui-nav {
+	width: 180px;
+	list-style-type: none;
+	background-color: #fafafa;
+	border-right: 1px solid #eee;
+	margin: 0;
+	padding: 0;
+}
+
+#zakra-page-setting .zakra-ui-nav li {
+	margin: 0;
+	outline: none;
+}
+
+#zakra-page-setting .zakra-ui-nav li a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	border-bottom: 1px solid #eee;
+	color: #252525;
+}
+
+#zakra-page-setting .zakra-ui-nav li.ui-tabs-active a {
+	background: #fff;
+	margin-right: -1px;
+}
+
+#zakra-page-setting .zakra-ui-content {
+	padding: 0 20px;
+	width: calc(100% - 180px);
+}
+
+#zakra-page-setting .zakra-ui-content .options-group {
+	padding: 15px 0;
+	border-bottom: 1px solid #eee;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+#zakra-page-setting .zakra-ui-content .zakra-ui-desc,
+#zakra-page-setting .zakra-ui-content .zakra-ui-field {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+#zakra-page-setting .zakra-ui-content .zakra-ui-desc > label {
+	display: block;
+}
+
+#zakra-page-setting .zakra-ui-content .tg-label img {
+	width: 120px;
+}
+
+#zakra-page-setting .zakra-ui-content .tg-label input[type="radio"] {
+	display: none;
+}
+
+#zakra-page-setting .tg-label input:checked + img {
+	-webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+	border: 1px solid #13a1dc;
+}

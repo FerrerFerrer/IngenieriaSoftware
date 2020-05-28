@@ -1,0 +1,46 @@
+.customize-control-zakra-slider {
+
+	.customize-control-content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.ui-slider {
+		background-color: rgba(0, 0, 0, 0.1);
+		width: 63%;
+		height: 6px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-radius: 3px;
+
+		.ui-slider-handle {
+			height: 15px;
+			width: 15px;
+			background-color: #fff;
+			position: absolute;
+			cursor: pointer;
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+			border-radius: 3px;
+		}
+
+		.ui-slider-range {
+			background-color: $c-primary;
+			height: 100%;
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+		}
+	}
+
+	.zakra-slider-input {
+		display: flex;
+		align-items: center;
+
+		.slider-reset {
+			padding-left: 5px;
+			cursor: pointer;
+		}
+	}
+}

@@ -1,0 +1,502 @@
+/* selectWoo */
+.select2-container--default .select2-selection--single {
+	border-color: #ddd;
+}
+
+.zakra-customizer-title-wrapper {
+	position: relative;
+	cursor: pointer;
+}
+
+.zakra-customizer-title-wrapper .customize-control-title {
+	margin-right: 30px;
+	padding: 5px 0;
+}
+
+.zakra-customizer-title-wrapper .zakra-toggle-button {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.zakra-customizer-title-wrapper .zakra-toggle-button a {
+	text-decoration: none;
+	background-color: #FFF;
+	padding: 4px;
+	margin-top: 3px;
+	display: block;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 0 1px 1px #ddd;
+	box-shadow: 0 0 1px 1px #ddd;
+}
+
+.zakra-group-fields {
+	padding: 10px 8px;
+	background-color: #FFF;
+	-webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	position: relative;
+	margin-top: 10px;
+}
+
+.zakra-group-fields::before {
+	font-family: dashicons;
+	content: "\f142";
+	font-size: 40px;
+	color: #FFF;
+	position: absolute;
+	top: -10px;
+	right: -5px;
+}
+
+.zakra-group-fields .zakra-single-field {
+	margin-bottom: 4px;
+}
+
+.zakra-group-fields .zakra-single-field:last-child {
+	margin-bottom: 0;
+}
+
+.zakra-group-fields .zakra-single-field::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.zakra-group-fields .zakra-single-field .zakra-field-title,
+.zakra-group-fields .zakra-single-field .zakra-field-content {
+	float: left;
+	width: 50%;
+}
+
+.zakra-group-fields .zakra-single-field .zakra-field-title {
+	font-size: 1em;
+	margin: 0;
+}
+
+/* Control: Heading */
+.customize-control-zakra-heading {
+	display: list-item;
+	margin-left: -12px;
+	margin-right: -12px;
+	padding: 5px 10px;
+	background: #FFF;
+	border-left: 4px solid #0073aa;
+}
+
+.customize-control-zakra-heading h4 {
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.customize-control-zakra-heading h4 span {
+	margin-bottom: 0;
+}
+
+.customize-control-zakra-background {
+	position: relative;
+}
+
+.customize-control-zakra-background .background-wrapper {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 6px 8px;
+}
+
+.customize-control-zakra-background .background-color h4,
+.customize-control-zakra-background .background-image h4,
+.customize-control-zakra-background .background-attachment h4,
+.customize-control-zakra-background .background-position h4,
+.customize-control-zakra-background .background-repeat h4,
+.customize-control-zakra-background .background-size h4 {
+	margin: 0 0 5px;
+}
+
+.customize-control-zakra-background .background-attachment .buttonset,
+.customize-control-zakra-background .background-size .buttonset {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.customize-control-zakra-background .background-attachment .buttonset .switch-label,
+.customize-control-zakra-background .background-size .buttonset .switch-label {
+	background: rgba(0, 0, 0, 0.05);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	color: #555;
+	padding: 0.5em 1em;
+	margin: 0;
+	text-align: center;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.customize-control-zakra-background .background-attachment .buttonset .switch-input:checked + .switch-label,
+.customize-control-zakra-background .background-size .buttonset .switch-input:checked + .switch-label {
+	background-color: #3498DB;
+	color: #fff;
+}
+
+li[class|="customize-control-zakra-"] .wp-picker-container .wp-color-result.button {
+	width: 100%;
+	max-width: 255px;
+	height: 30px;
+	margin: 0 6px 6px 0;
+	padding: 0 0 0 30px;
+	font-size: 11px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+li[class|="customize-control-zakra-"] .wp-picker-container .wp-color-result-text {
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 0 2px 2px 0;
+	border-left: 1px solid rgba(0, 0, 0, 0.06);
+	color: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100%;
+}
+
+li[class|="customize-control-zakra-"] .wp-picker-container span.color-alpha {
+	width: 30px;
+	height: 24px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.customize-control-zakra-dimensions {
+	position: relative;
+}
+
+.customize-control-zakra-dimensions .wrapper {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 6px 8px;
+}
+
+.customize-control-zakra-dimensions .wrapper .control {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.customize-control-zakra-dimensions .wrapper .control > div {
+	width: 23%;
+}
+
+.customize-control-zakra-dimensions .wrapper .control > div h5 {
+	margin: 0;
+	font-weight: normal;
+}
+
+.customize-control-zakra-radio-buttonset .buttonset {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.customize-control-zakra-radio-buttonset .buttonset .switch-label {
+	background: rgba(0, 0, 0, 0.1);
+	border: 1px rgba(0, 0, 0, 0.1);
+	color: rgba(50, 55, 60, 0.5);
+	margin: 0;
+	text-align: center;
+	padding: 0.5em 1em;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.customize-control-zakra-radio-buttonset .buttonset .switch-input:checked + .switch-label {
+	background: #13a1dc;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+/* Control: Radio image. */
+.customize-control-zakra-radio-image > .image {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.customize-control-zakra-radio-image#customize-control-zakra_mobile_menu_style .image-select + label {
+	width: 48%;
+	margin-right: 4%;
+}
+
+.customize-control-zakra-radio-image#customize-control-zakra_mobile_menu_style .image-select + label:nth-of-type(2n) {
+	margin-right: 0;
+}
+
+.customize-control-zakra-radio-image .image-select + label {
+	position: relative;
+	display: inline-block;
+	width: 32%;
+	margin-right: 2%;
+}
+
+.customize-control-zakra-radio-image .image-select + label:nth-of-type(3n) {
+	margin-right: 0;
+}
+
+.customize-control-zakra-radio-image .image-select + label .image-label {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.7);
+	font-weight: 700;
+}
+
+.customize-control-zakra-radio-image .image-select + label .image-label .inner {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 0.5em;
+	vertical-align: middle;
+}
+
+.customize-control-zakra-radio-image .image-select + label:hover .image-label {
+	display: block;
+}
+
+.customize-control-zakra-radio-image input {
+	display: none;
+}
+
+.customize-control-zakra-radio-image input img {
+	border: 1px solid transparent;
+}
+
+.customize-control-zakra-radio-image input:checked + label img {
+	-webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+	border: 1px solid #13a1dc;
+}
+
+.customize-control-zakra-radio-image input + label .image-clickable {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.customize-control-zakra-slider .customize-control-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.customize-control-zakra-slider .ui-slider {
+	background-color: rgba(0, 0, 0, 0.1);
+	width: 63%;
+	height: 6px;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	border-radius: 3px;
+}
+
+.customize-control-zakra-slider .ui-slider .ui-slider-handle {
+	height: 15px;
+	width: 15px;
+	background-color: #fff;
+	position: absolute;
+	cursor: pointer;
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+}
+
+.customize-control-zakra-slider .ui-slider .ui-slider-range {
+	background-color: #13a1dc;
+	height: 100%;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+
+.customize-control-zakra-slider .zakra-slider-input {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.customize-control-zakra-slider .zakra-slider-input .slider-reset {
+	padding-left: 5px;
+	cursor: pointer;
+}
+
+/* Control: Sortable. */
+.customize-control-zakra-sortable ul.ui-sortable li {
+	padding: 5px 10px;
+	border: 1px solid #333;
+	background: #fff;
+}
+
+.customize-control-zakra-sortable ul.ui-sortable li .dashicons.dashicons-menu {
+	float: right;
+}
+
+.customize-control-zakra-sortable ul.ui-sortable li .dashicons.visibility {
+	margin-right: 10px;
+}
+
+.customize-control-zakra-sortable ul.ui-sortable li.invisible {
+	color: #aaa;
+	border: 1px dashed #aaa;
+}
+
+.customize-control-zakra-sortable ul.ui-sortable li.invisible .dashicons.visibility {
+	color: #aaa;
+}
+
+/* Control: Switch. */
+.customize-control-zakra-toggle {
+	position: relative;
+}
+
+.customize-control-zakra-toggle label {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.customize-control-zakra-toggle label .customize-control-title {
+	width: calc(100% - 55px);
+}
+
+.customize-control-zakra-toggle label .description {
+	-webkit-box-ordinal-group: 100;
+	-ms-flex-order: 99;
+	order: 99;
+}
+
+.customize-control-zakra-toggle .switch {
+	border: 1px solid #b4b9be;
+	display: inline-block;
+	width: 35px;
+	height: 12px;
+	border-radius: 8px;
+	background: #b4b9be;
+	vertical-align: middle;
+	position: relative;
+	top: 4px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: background 350ms ease;
+	transition: background 350ms ease;
+}
+
+.customize-control-zakra-toggle .switch::after {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: -3px;
+	-webkit-transition: all 350ms cubic-bezier(0, 0.95, 0.38, 0.98), background 150ms ease;
+	transition: all 350ms cubic-bezier(0, 0.95, 0.38, 0.98), background 150ms ease;
+	background: #999;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	-webkit-transform: translate3d(0, -50%, 0);
+	transform: translate3d(0, -50%, 0);
+}
+
+.customize-control-zakra-toggle .switch::before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: -3px;
+	-webkit-transition: all 350ms cubic-bezier(0, 0.95, 0.38, 0.98), background 150ms ease;
+	transition: all 350ms cubic-bezier(0, 0.95, 0.38, 0.98), background 150ms ease;
+	background: rgba(0, 0, 0, 0.2);
+	-webkit-transform: translate3d(0, -50%, 0) scale(0);
+	transform: translate3d(0, -50%, 0) scale(0);
+}
+
+.customize-control-zakra-toggle .switch:active::before {
+	-webkit-transform: translate3d(0, -50%, 0) scale(3);
+	transform: translate3d(0, -50%, 0) scale(3);
+}
+
+.customize-control-zakra-toggle input:checked + .switch::before {
+	background: rgba(0, 115, 170, 0.075);
+	-webkit-transform: translate3d(100%, -50%, 0) scale(1);
+	transform: translate3d(100%, -50%, 0) scale(1);
+}
+
+.customize-control-zakra-toggle input:checked + .switch::after {
+	background: #13a1dc;
+	-webkit-transform: translate3d(100%, -50%, 0);
+	transform: translate3d(100%, -50%, 0);
+}
+
+.customize-control-zakra-toggle input:checked + .switch:active::before {
+	background: rgba(0, 115, 170, 0.075);
+	-webkit-transform: translate3d(100%, -50%, 0) scale(3);
+	transform: translate3d(100%, -50%, 0) scale(3);
+}
+
+/* Control: Typography. */
+span.select2-container.select2-container--default.select2-container--open {
+	z-index: 999999;
+}
+
+.customize-control-zakra-typography .zakra-typography-wrapper.toggle-content {
+	display: none;
+}

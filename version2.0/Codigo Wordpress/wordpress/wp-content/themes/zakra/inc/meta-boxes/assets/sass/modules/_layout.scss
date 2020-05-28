@@ -1,0 +1,77 @@
+#zakra-page-setting {
+
+	.inside {
+		margin: 0;
+		padding: 0;
+	}
+
+	#page-settings-tabs-wrapper {
+		display: flex;
+	}
+
+	.zakra-ui-nav {
+		width: 180px;
+		list-style-type: none;
+		background-color: #fafafa;
+		border-right: 1px solid #eee;
+		margin: 0;
+		padding: 0;
+
+		li {
+			margin: 0;
+			outline: none;
+
+			a {
+				display: block;
+				padding: 10px;
+				text-decoration: none;
+				border-bottom: 1px solid #eee;
+				color: #252525;
+
+			}
+
+			&.ui-tabs-active {
+
+				a {
+					background: #fff;
+					margin-right: -1px;
+				}
+			}
+		}
+	}
+
+	.zakra-ui-content {
+		padding: 0 20px;
+		width: calc(100% - 180px);
+
+		.options-group {
+			padding: 15px 0;
+			border-bottom: 1px solid #eee;
+			display: flex;
+		}
+
+		.zakra-ui-desc,
+		.zakra-ui-field {
+			flex: 1;
+		}
+
+		.zakra-ui-desc {
+			> label {
+				display: block;
+			}
+		}
+	}
+
+	.zakra-ui-content .tg-label img {
+		width: 120px;
+	}
+
+	.zakra-ui-content .tg-label input[type="radio"] {
+		display: none;
+	}
+
+	.tg-label input:checked + img {
+		box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+		border: 1px solid #13a1dc;
+	}
+}

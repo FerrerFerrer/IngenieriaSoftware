@@ -1,0 +1,16 @@
+/* Control: Typography. */
+
+span.select2-container.select2-container--default.select2-container--open {
+	z-index: 999999;
+}
+
+.customize-control-zakra-typography {
+
+	.zakra-typography-wrapper {
+
+		&.toggle-content {
+			display: none;
+		}
+	}
+
+}

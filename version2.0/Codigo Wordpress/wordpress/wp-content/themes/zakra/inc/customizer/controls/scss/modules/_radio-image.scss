@@ -1,0 +1,82 @@
+/* Control: Radio image. */
+
+.customize-control-zakra-radio-image {
+
+	> .image {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&#customize-control-zakra_mobile_menu_style {
+		.image-select {
+			+ label {
+				width: 48%;
+				margin-right: 4%;
+
+				&:nth-of-type( 2n ) {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	.image-select {
+		+ label {
+			position: relative;
+			display: inline-block;
+			width: 32%;
+			margin-right: 2%;
+
+			&:nth-of-type( 3n ) {
+				margin-right: 0;
+			}
+
+			.image-label {
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: $c-bg-label;
+				font-weight: 700;
+
+				.inner {
+					width: 100%;
+					height: 100%;
+					text-align: center;
+					padding: 0.5em;
+					vertical-align: middle;
+				}
+			}
+
+			&:hover .image-label {
+				display: block;
+			}
+		}
+	}
+
+
+	input {
+		display: none;
+
+		img {
+			border: 1px solid transparent;
+		}
+
+		&:checked + label img {
+			box-shadow: 0 0 5px 2px $c-bg-checked;
+			border: 1px solid $c-primary;
+		}
+
+		+ label .image-clickable {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

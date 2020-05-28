@@ -1,0 +1,155 @@
+/*
+Theme Name: Book Landing Page
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+https://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+body {
+    direction: rtl;
+    unicode-bidi: embed;
+}
+
+.site-branding{
+	float: right;
+}
+
+.main-navigation{
+	float: left;
+	margin-right: 0;
+	margin-left: 12px;
+}
+
+.main-navigation li{
+	float: right;
+	margin-left: 0;
+	margin-right: 61px;
+}
+
+.main-navigation li:first-child{
+	margin-right: 0;
+}
+
+.main-navigation ul ul,
+.main-navigation ul ul ul {
+    display: none;
+}
+
+.main-navigation ul li:hover > ul {
+    left: auto;
+    right: -20px;
+    display: block;
+}
+
+.main-navigation ul ul li:hover > ul {
+    left: 100%;
+    right: auto;
+    display: block;
+}
+
+.banner .col,
+.about .col,
+.testimonial .col{
+	float: right;
+}
+
+.banner .img-holder{
+	margin-left: 0;
+	margin-right: 52px;
+}
+
+.testimonial .col cite .img-holder{
+	float: right;
+	margin-right: 0;
+	margin-left: 12px;
+}
+
+.sample .tab-holder .tabs li{
+	float: right;
+}
+
+.about-author .col{
+	float: right;
+}
+
+.site-footer .site-info{
+	float: left;
+}
+
+.wpcf7{
+	direction: rtl;
+}
+
+.widget.widget_search .search-form label,
+.widget.widget_search .search-form input[type="search"],
+.search #primary .search-form label,
+.search #primary .search-form input[type="search"]{
+	float: right;
+}
+
+.widget.widget_search .search-form input[type="submit"],
+.search #primary .search-form input[type="submit"]{
+	float: left;
+}
+
+.widget ul li::before{
+	margin-right: 0;
+	margin-left: 10px;
+	float: right;
+	transform: rotateY(180deg);
+}
+
+.widget.widget_categories ul li a{
+	float: right;
+}
+
+#crumbs a{
+	display: inline-block;
+}
+
+#primary .post .entry-meta .byline{
+	float: right;
+}
+
+#primary .post .entry-meta .share-link, #primary .post .entry-meta .category, #primary .post .entry-meta .comments-link, #primary .post .entry-meta .posted-on{
+	float: left;
+}
+
+#primary .post .entry-meta .category, #primary .post .entry-meta .comments-link, #primary .post .entry-meta .posted-on{
+	border-left: 1px solid #999999;
+	border-right: 0;
+}
+
+#primary .post .entry-meta .category, #primary .post .entry-meta .comments-link, #primary .post .entry-meta .posted-on{
+	margin-right: 0;
+	margin-left: 8px;
+	padding-right: 0;
+	padding-left: 8px;
+}
+
+.readmore,
+.comments-area .comment-body .reply a{
+	float: right;
+}
+
+.comments-area .comment-body .avatar{
+	float: right;
+	margin-right: 0;
+	margin-left: 23px;
+}
+
+.comments-area .comment-body .comment-content,
+.comments-area .comment-body .reply{
+	margin-left: 0;
+	margin-right: 93px;
+}
+
+@media only screen and (max-width:991px){
+	.site-branding{
+		float: left;
+	}
+}
