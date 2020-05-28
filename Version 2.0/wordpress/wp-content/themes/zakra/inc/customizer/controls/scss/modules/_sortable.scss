@@ -1,0 +1,27 @@
+/* Control: Sortable. */
+
+.customize-control-zakra-sortable ul.ui-sortable li {
+	padding: 5px 10px;
+	border: 1px solid $c-sortable-bd;
+	background: $c-white;
+
+	.dashicons {
+
+		&.dashicons-menu {
+			float: right;
+		}
+
+		&.visibility {
+			margin-right: 10px;
+		}
+	}
+
+	&.invisible {
+		color: $c-sortable-ds;
+		border: 1px dashed $c-sortable-ds;
+
+		.dashicons.visibility {
+			color: $c-sortable-ds;
+		}
+	}
+}

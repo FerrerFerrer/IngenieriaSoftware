@@ -1,0 +1,19 @@
+<wpml-config>
+	<admin-texts>
+		<key name="theme_mods_zakra">
+			<key name="zakra_header_top_left_content_html" />
+			<key name="zakra_header_top_right_content_html" />
+			<key name="zakra_header_button_text" />
+			<key name="zakra_header_button_link" />
+			<key name="zakra_footer_bar_section_one_html" />
+			<key name="zakra_footer_bar_section_two_html" />
+			<key name="zakra_header_button_two_text" />
+			<key name="zakra_header_button_two_link" />
+			<key name="zakra_mobile_menu_toggle_text" />
+			<key name="zakra_blog_archive_excerpt_more_text" />
+			<key name="zakra_blog_archive_read_more_text" />
+			<key name="zakra_single_post_before_content_text" />
+			<key name="zakra_single_post_after_content_text" />
+		</key>
+	</admin-texts>
+</wpml-config>

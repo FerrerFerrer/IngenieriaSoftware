@@ -1,0 +1,74 @@
+/* selectWoo */
+.select2-container--default .select2-selection--single {
+	border-color: #ddd;
+}
+
+.zakra-customizer-title-wrapper {
+	position: relative;
+	cursor: pointer;
+
+	.customize-control-title {
+		margin-right: 30px;
+		padding: 5px 0;
+	}
+
+	.zakra-toggle-button {
+		position: absolute;
+		right: 0;
+		top: 0;
+
+		a {
+			text-decoration: none;
+			background-color: #FFF;
+			padding: 4px;
+			margin-top: 3px;
+			display: block;
+			border-radius: 3px;
+			box-shadow: 0 0 1px 1px #ddd;
+		}
+	}
+}
+
+.zakra-group-fields {
+	padding: 10px 8px;
+	background-color: #FFF;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+	position: relative;
+	margin-top: 10px;
+
+	&::before {
+		font-family: dashicons;
+		content: "\f142";
+		font-size: 40px;
+		color: #FFF;
+		position: absolute;
+		top: -10px;
+		right: -5px;
+	}
+
+	.zakra-single-field {
+		margin-bottom: 4px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.zakra-field-title,
+		.zakra-field-content {
+			float: left;
+			width: 50%;
+		}
+
+		.zakra-field-title {
+			font-size: 1em;
+			margin: 0;
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.customize-control-zakra-radio-buttonset .buttonset {
+	display: flex;
+	flex-wrap: wrap;
+
+	.switch-label {
+		background: rgba(0, 0, 0, 0.1);
+		border: 1px rgba(0, 0, 0, 0.1);
+		color: rgba(50, 55, 60, 0.5);
+		margin: 0;
+		text-align: center;
+		padding: 0.5em 1em;
+		flex-grow: 1;
+	}
+
+	.switch-input:checked + .switch-label {
+		background: $c-primary;
+		color: rgba(255, 255, 255, 0.8);
+	}
+}

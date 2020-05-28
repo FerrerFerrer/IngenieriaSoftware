@@ -1,0 +1,20 @@
+/* Control: Heading */
+
+.customize-control-zakra-heading {
+	display: list-item;
+	margin-left: -12px;
+	margin-right: -12px;
+	padding: 5px 10px;
+	background: #FFF;
+	border-left: 4px solid #0073aa;
+
+	h4 {
+		margin: 0;
+		text-transform: uppercase;
+
+		span {
+			margin-bottom: 0;
+		}
+	}
+
+}
